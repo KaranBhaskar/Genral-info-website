@@ -1,0 +1,72 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap");
+:root {
+  --primary-color: rgba(13, 110, 139, 0.75);
+  --secondary-color: rgba(229, 148, 0, 0.9);
+  --overlay-color: rgba(24.39, 51, 0.85);
+  --menu-speed: 0.75s;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  line-height: 1.4;
+}
+.container {
+  max-width: 960px;
+  padding: 0 2rem;
+  margin: auto;
+  overflow: hidden;
+}
+.showcase {
+  background-color: var(--primary-color);
+  color: #f4f4f4;
+  height: 100vh;
+  position: relative;
+}
+.showcase:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: url("../img/showcase.jpg") no-repeat center center/cover;
+  z-index: -1;
+}
+.showwrap {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.showwrap h1 {
+  font-size: 4rem;
+  margin-bottom: 1rem;
+}
+
+.showwrap p {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.btn {
+  text-decoration: none;
+  display: inline-block;
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 10%;
+  background-color: var(--primary-color);
+  color: #f4f4f4;
+  transition: background-color 1s ease-in-out;
+}
+
+.btn:hover {
+  background-color: rgba(0, 0, 0, 1);
+}
